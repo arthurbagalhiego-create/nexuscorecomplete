@@ -1,0 +1,39 @@
+<div class="login-container" id="login-container">
+  <h1>🛠 𝒩𝑒𝓍𝓊𝓈 𝒞𝑜𝓇𝑒</h1>
+  <h2>Login</h2>
+  <input type="text" id="nome" placeholder="Nome">
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="senha" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+  <p id="erro"></p>
+</div>
+
+<div class="painel-container" id="painel-container" style="display:none;">
+  <h1>🛠 𝒩𝑒𝓍𝓊𝓈 𝒞𝑜𝓇𝑒 – Empresa Supreme</h1>
+  <h3>Contador de usuários: <span id="contadorUsuarios">0</span></h3>
+
+  <h2>Controle de Vendas e Despesas</h2>
+  <label>Valor da venda:</label>
+  <input type="number" id="venda" placeholder="Digite o valor da venda">
+  <label>Quantidade de funcionários:</label>
+  <input type="number" id="funcionarios" placeholder="Nº de funcionários">
+  <label>Salário por funcionário:</label>
+  <input type="number" id="salario" placeholder="Salário individual">
+  <button onclick="calcularDespesas()">Calcular Despesas</button>
+  <p id="resultado"></p>
+
+  <button onclick="toggleBlocoNotas()">📝 Abrir/Fechar Bloco de Notas</button>
+  <div id="blocoNotasContainer" style="display:none; margin-top:10px;">
+    <textarea id="blocoNotas" placeholder="Escreva palavra por palavra aqui..."></textarea>
+    <button onclick="salvarNota()">Salvar Nota</button>
+    <p id="statusNota"></p>
+  </div>
+
+  <hr>
+
+  <h2>🏦 Banco Virtual</h2>
+  <p>Saldo: R$ <span id="saldo">0</span></p>
+  <input type="number" id="valorBanco" placeholder="Valor para adicionar/retirar">
+  <button onclick="adicionarBanco()">Adicionar</button>
+  <button onclick="retirarBanco()">Retirar</button>
+</div>

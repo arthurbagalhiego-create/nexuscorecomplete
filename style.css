@@ -1,0 +1,71 @@
+body {
+  background: #000;
+  color: #0ff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+input,
+textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 300px;
+  border-radius: 15px;
+  border: none;
+  background: #111;
+  color: #0ff;
+  box-shadow: 0 0 10px #0ff;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 20px;
+  border: none;
+  background: #0ff;
+  color: black;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #f0f;
+  transition: 0.3s;
+}
+button:hover {
+  box-shadow: 0 0 20px #0ff, 0 0 40px #f0f;
+  transform: scale(1.05);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  text-shadow: 0 0 15px #0ff, 0 0 30px #f0f;
+}
+
+#erro {
+  color: red;
+  text-align: center;
+}
+#statusNota {
+  color: #f0f;
+  text-align: center;
+}
+
+.login-container,
+.painel-container {
+  background: #111;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #f0f;
+  width: 450px;
+  margin-bottom: 20px;
+}
